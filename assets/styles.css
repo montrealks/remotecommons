@@ -189,36 +189,45 @@ li {
     }
 
     .content {
-        padding: 20px;
+        padding: 15px;
     }
 
     .container {
-        padding: 15px 10px;
+        padding: 10px 5px;
     }
 
     header {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .pdf-cover {
-        margin: 15px auto 0;
+        margin: 10px auto 0;
     }
 
     .form-container {
-        padding: 10px;
+        padding: 5px;
+        background: transparent;
     }
 
     .bottom-section {
-        padding: 20px;
+        padding: 15px;
     }
 
     .author-section {
-        margin-top: 20px;
-        padding: 20px;
+        margin-top: 15px;
+        padding: 15px;
+    }
+
+    .main-layout {
+        gap: 15px;
+    }
+
+    .top-section {
+        gap: 15px;
     }
 
     #sib-container {
         max-width: 100% !important;
-        padding: 15px !important;
+        padding: 10px !important;
     }
 }
