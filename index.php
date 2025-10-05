@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remote Commons - Digital Nomad Visa Whitepaper</title>
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -52,7 +54,7 @@
                 </p>
 
                 <div class="form-container">
-                    <iframe width="540" height="500" src="https://610797ae.sibforms.com/serve/MUIFAIjSR6PpHBGHP_XeDRgdLW1vkwDH6oRbYPn1GQQb37VLOGLGm0Jl8UIcyY3mkmmxVw1Q59eHcX4oBlwIS-hVpe_kzqok_BMzK8gwotJXdKufLACMDazPK8XVEtpnRA-4VURydOWwRbU9SG1OuL_7a3VlNmVEvxycvGuePY4_k9w1vz6kj4Za4Wq6tER9K118TOpDrQ_8glz0" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+                    <iframe width="540" height="305" src="https://610797ae.sibforms.com/serve/MUIFAIjSR6PpHBGHP_XeDRgdLW1vkwDH6oRbYPn1GQQb37VLOGLGm0Jl8UIcyY3mkmmxVw1Q59eHcX4oBlwIS-hVpe_kzqok_BMzK8gwotJXdKufLACMDazPK8XVEtpnRA-4VURydOWwRbU9SG1OuL_7a3VlNmVEvxycvGuePY4_k9w1vz6kj4Za4Wq6tER9K118TOpDrQ_8glz0" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
                 </div>
             </div>
 
@@ -65,4 +67,5 @@
         </div>
     </div>
 </body>
+
 </html>
