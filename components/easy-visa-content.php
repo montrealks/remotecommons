@@ -3,25 +3,6 @@
     <p class="lead fst-italic text-muted">One Application. Four Countries. Five Years of Freedom.</p>
 </header>
 
-<div class="easy-acronym mb-5">
-    <div class="acronym-row">
-        <div class="acronym-letter">E</div>
-        <div class="acronym-desc">East Asia connectivity through cooperative mobility frameworks</div>
-    </div>
-    <div class="acronym-row">
-        <div class="acronym-letter">A</div>
-        <div class="acronym-desc">Access to four countries with a single five-year visa</div>
-    </div>
-    <div class="acronym-row">
-        <div class="acronym-letter">S</div>
-        <div class="acronym-desc">Skills exchange fostering regional economic and cultural ties</div>
-    </div>
-    <div class="acronym-row">
-        <div class="acronym-letter">Y</div>
-        <div class="acronym-desc">Youth opportunity building future generations of global citizens</div>
-    </div>
-</div>
-
 <div class="card mb-4">
     <div class="card-body">
         <p class="fs-5 mb-4 text-secondary">
@@ -57,7 +38,7 @@
         </p>
 
         <p class="text-center fst-italic text-muted">
-            To learn more or get involved, please email <a href="mailto:EMAIL_ADDRESS_HERE" class="text-decoration-none">EMAIL_ADDRESS_HERE</a>
+            To learn more or get involved, please email <a href="mailto:busababruns@gmail.com" class="text-decoration-none">busababruns@gmail.com</a>
         </p>
     </div>
 </div>

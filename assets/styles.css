@@ -92,11 +92,11 @@ body {
 }
 
 .acronym-letter {
-    font-size: 5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #2c3e50;
     line-height: 1;
-    min-width: 100px;
+    min-width: 80px;
     text-align: center;
 }
 
