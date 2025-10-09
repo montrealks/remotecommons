@@ -19,7 +19,7 @@
         </header>
 
         <div class="row g-4 mb-4">
-            <div class="col-lg-4">
+            <div class="col-lg-4 d-flex align-items-center justify-content-center">
                 <img src="/assets/pdf-cover.png" alt="Digital Nomad Visa Whitepaper Cover" class="img-fluid rounded shadow-lg" width="300" height="400" loading="lazy">
             </div>
 

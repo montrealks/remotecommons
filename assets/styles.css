@@ -4,9 +4,18 @@ body {
     background-color: #f8f9fa;
 }
 
+.container {
+    max-width: 900px !important;
+}
+
 .logo {
     max-width: 100px;
     height: auto;
+}
+
+/* Add more padding to cards to match original design */
+.card-body {
+    padding: 2.5rem !important;
 }
 
 .form-container {
@@ -21,8 +30,12 @@ body {
     display: none !important;
 }
 
-/* Mobile optimizations for Brevo form */
+/* Mobile optimizations */
 @media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+
     .form-container {
         padding: 5px;
         background: transparent;
