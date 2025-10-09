@@ -13,6 +13,64 @@ body {
     height: auto;
 }
 
+/* Tab Navigation Styles */
+.nav-tabs {
+    gap: 0;
+    margin-bottom: 0 !important;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-item {
+    flex: 1;
+    max-width: 450px;
+}
+
+.tab-logo-btn {
+    background: white;
+    border: 1px solid #dee2e6 !important;
+    border-bottom: none !important;
+    border-radius: 8px 8px 0 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    margin-bottom: -1px;
+    width: 100%;
+    min-height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+}
+
+.tab-logo-btn.active {
+    background: white;
+    border-color: #dee2e6 !important;
+    border-bottom-color: transparent !important;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+    z-index: 3;
+    opacity: 1;
+}
+
+.tab-logo {
+    display: block;
+    height: auto;
+}
+
+/* Tab Content Wrapper - ensures consistent height */
+.tab-content-wrapper {
+    min-height: 800px;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 0 0 8px 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+}
+
 /* Add more padding to cards to match original design */
 .card-body {
     padding: 2.5rem !important;
@@ -32,8 +90,21 @@ body {
 
 /* Mobile optimizations */
 @media (max-width: 768px) {
-    .card-body {
+    .nav-tabs {
+        gap: 10px;
+    }
+
+    .tab-logo-btn {
+        padding: 15px;
+    }
+
+    .tab-content-wrapper {
+        min-height: 600px;
         padding: 1rem;
+    }
+
+    .card-body {
+        padding: 1rem !important;
     }
 
     .form-container {

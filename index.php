@@ -12,56 +12,39 @@
 
 <body>
     <div class="container py-5">
-        <header class="text-center mb-5">
-            <img src="/assets/logo.png" alt="Remote Commons Logo" class="logo mb-3" width="100" height="100" loading="lazy">
-            <h1 class="display-4 text-dark mb-2">Welcome to Remote Commons</h1>
-            <p class="lead fst-italic text-muted">Exploring the Intersection of Remote Work & Global Mobility</p>
-        </header>
+        <!-- Tab Navigation with Logos -->
+        <ul class="nav nav-tabs justify-content-center mb-4 border-0" id="mainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active tab-logo-btn" id="remote-commons-tab" data-bs-toggle="tab" data-bs-target="#remote-commons" type="button" role="tab" aria-controls="remote-commons" aria-selected="true">
+                    <img src="/assets/logo.png" alt="Remote Commons Logo" class="tab-logo" width="100" height="100" loading="lazy">
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link tab-logo-btn" id="easy-visa-tab" data-bs-toggle="tab" data-bs-target="#easy-visa" type="button" role="tab" aria-controls="easy-visa" aria-selected="false">
+                    <img src="/assets/logo-easy.png" alt="E.A.S.Y. VISA Logo" class="tab-logo" width="200" height="100" loading="lazy">
+                </button>
+            </li>
+        </ul>
 
-        <div class="row g-4 mb-4">
-            <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                <img src="/assets/pdf-cover.png" alt="Digital Nomad Visa Whitepaper Cover" class="img-fluid rounded shadow-lg" width="300" height="400" loading="lazy">
+        <!-- Tab Content -->
+        <div class="tab-content" id="mainTabsContent">
+            <!-- Remote Commons Tab -->
+            <div class="tab-pane fade show active" id="remote-commons" role="tabpanel" aria-labelledby="remote-commons-tab">
+                <div class="tab-content-wrapper">
+                    <?php include 'components/remote-commons-content.php'; ?>
+                </div>
             </div>
 
-            <div class="col-lg-8">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <p class="fs-5 mb-4 text-secondary">
-                            The Digital Nomad Visa Whitepaper is a report on digital nomads and remote work visa programs written by Lily Szabo and Leanna Lee.
-                        </p>
-
-                        <p class="lh-lg">
-                            An in-depth analysis of the digital nomad phenomenon, this work explores the landscape of remote work visas, providing insider insights and policy recommendations. This report is presented from the perspective of digital nomads and aimed at those looking for data, background information, and specific examples of policy approaches that embrace the remote work community and reflect innovative approaches to global mobility.
-                        </p>
-                    </div>
+            <!-- E.A.S.Y. VISA Tab -->
+            <div class="tab-pane fade" id="easy-visa" role="tabpanel" aria-labelledby="easy-visa-tab">
+                <div class="tab-content-wrapper">
+                    <?php include 'components/easy-visa-content.php'; ?>
                 </div>
             </div>
         </div>
 
-        <div class="card mb-4">
-            <div class="card-body">
-                <h2 class="h4 mb-3">This 60-page primer includes:</h2>
-                <ul class="lh-lg">
-                    <li>Demographic information about digital nomads, including their numbers, motivations, movement patterns, and subcategories.</li>
-                    <li>History of digital nomadism and trends on the rise.</li>
-                    <li>A directory and analysis of visas for remote workers.</li>
-                    <li>Policy recommendations and best practices.</li>
-                    <li>Collected definitions, resources, and policy experts on remote work and digital nomads.</li>
-                </ul>
-
-                <p class="fst-italic text-muted mb-3">Published December 2023.</p>
-
-                <p class="fs-5 fw-semibold text-center mb-4">
-                    This work is available to download for free. Please submit your name and email address, and a link will be sent to your inbox.
-                </p>
-
-                <div class="form-container">
-                    <?php include 'components/form.php'; ?>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
+        <!-- Author Bio - Outside of tabs -->
+        <div class="card mt-4">
             <div class="card-body text-center">
                 <img src="/assets/lily.jpg" alt="Lily Szabo" class="rounded-circle mb-3" width="150" height="150" loading="lazy">
                 <p class="lh-lg text-secondary mx-auto" style="max-width: 600px;">
