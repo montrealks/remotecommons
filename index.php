@@ -16,12 +16,12 @@
         <ul class="nav nav-tabs justify-content-center mb-4 border-0" id="mainTabs" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active tab-logo-btn" id="remote-commons-tab" data-bs-toggle="tab" data-bs-target="#remote-commons" type="button" role="tab" aria-controls="remote-commons" aria-selected="true">
-                    <img src="/assets/logo.png" alt="Remote Commons Logo" class="tab-logo" width="100" height="100" loading="lazy">
+                    <img src="/assets/logo.png" alt="Remote Commons Logo" class="tab-logo tab-logo-rc" width="100" height="100" loading="lazy">
                 </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link tab-logo-btn" id="easy-visa-tab" data-bs-toggle="tab" data-bs-target="#easy-visa" type="button" role="tab" aria-controls="easy-visa" aria-selected="false">
-                    <img src="/assets/logo-easy.png" alt="E.A.S.Y. VISA Logo" class="tab-logo" width="200" height="100" loading="lazy">
+                    <img src="/assets/logo-easy.png" alt="E.A.S.Y. VISA Logo" class="tab-logo tab-logo-easy" width="200" height="100" loading="lazy">
                 </button>
             </li>
         </ul>
