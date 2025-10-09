@@ -71,6 +71,42 @@ body {
     margin-top: -1px;
 }
 
+/* EASY Acronym Display */
+.easy-acronym {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 3rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.acronym-row {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.acronym-row:last-child {
+    margin-bottom: 0;
+}
+
+.acronym-letter {
+    font-size: 5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    line-height: 1;
+    min-width: 100px;
+    text-align: center;
+}
+
+.acronym-desc {
+    font-size: 1.25rem;
+    color: #555;
+    line-height: 1.4;
+    flex: 1;
+}
+
 /* Add more padding to cards to match original design */
 .card-body {
     padding: 2.5rem !important;
@@ -81,6 +117,13 @@ body {
     padding: 30px;
     border-radius: 8px;
     text-align: center;
+}
+
+/* Author photo */
+.author-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
 /* Hide Brevo help text */
@@ -101,6 +144,26 @@ body {
     .tab-content-wrapper {
         min-height: 600px;
         padding: 1rem;
+    }
+
+    .easy-acronym {
+        padding: 1.5rem;
+    }
+
+    .acronym-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .acronym-letter {
+        font-size: 3.5rem;
+        min-width: auto;
+    }
+
+    .acronym-desc {
+        font-size: 1rem;
     }
 
     .card-body {

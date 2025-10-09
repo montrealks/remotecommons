@@ -52,8 +52,12 @@
         </p>
 
         <h2 class="h4 mb-3">Why It Matters</h2>
-        <p class="lh-lg">
+        <p class="lh-lg mb-4">
             This initiative stimulates high-value consumption across four economies, strengthens soft-power ties through people-to-people exchange, and establishes trusted infrastructure for cross-border mobility management. It's cooperation through culture and commerce—not political union. Asia's answer to frictionless regional movement.
+        </p>
+
+        <p class="text-center fst-italic text-muted">
+            To learn more or get involved, please email <a href="mailto:EMAIL_ADDRESS_HERE" class="text-decoration-none">EMAIL_ADDRESS_HERE</a>
         </p>
     </div>
 </div>
