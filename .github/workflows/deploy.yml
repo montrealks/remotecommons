@@ -1,0 +1,23 @@
+name: Deploy to Hostinger
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: 82.25.88.242
+          port: 65002
+          username: u619977538
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          script_stop: true
+          script: |
+            cd /home/u619977538/domains/remotecommons.org/public_html
+            git fetch --all
+            git pull --ff-only origin master
+            echo "Deployed remotecommons.org at $(date -u +%FT%TZ)"
