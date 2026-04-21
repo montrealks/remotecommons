@@ -4,30 +4,24 @@ on:
     branches: [master]
   workflow_dispatch:
 
-# Deploy to Hostinger via VPS bastion. Hostinger blocks GH Actions IPs on :65002,
-# so we SSH to the VPS (100.96.57.39 over Tailscale), then SSH from there to
-# Hostinger (where the VPS's IP is trusted) and run the git pull.
+# Direct SSH — Hostinger accepts GH Actions IPs on :65002.
+# Runs git pull in the repo directory; no build step needed for WP themes.
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Connect Tailscale
-        uses: tailscale/github-action@v3
-        with:
-          authkey: ${{ secrets.TS_AUTH_KEY }}
-
-      - name: Deploy via VPS bastion
+      - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: 100.96.57.39
-          username: root
+          host: 82.25.88.242
+          port: 65002
+          username: u619977538
           key: ${{ secrets.DEPLOY_SSH_KEY }}
+          timeout: 60s
+          command_timeout: 60s
           script_stop: true
           script: |
-            ssh -o StrictHostKeyChecking=accept-new -p 65002 u619977538@82.25.88.242 "
-              set -e
-              cd /home/u619977538/domains/remotecommons.org/public_html
-              git fetch --all
-              git pull --ff-only origin master
-              echo Deployed remotecommons.org at \$(date -u +%FT%TZ)
-            "
+            cd /home/u619977538/domains/remotecommons.org/public_html
+            git fetch --all
+            git pull --ff-only origin master
+            echo "Deployed remotecommons.org at $(date -u +%FT%TZ)"
